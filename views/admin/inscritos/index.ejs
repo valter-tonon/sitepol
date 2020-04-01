@@ -1,0 +1,69 @@
+<%- include('../../partials/adminheader.ejs') %>
+<div class="main-panel">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <a class="navbar-brand" href="javascript:void(0)">Eventos </a>
+      </div>
+      <%- include('../../partials/navbar.ejs') %>
+<div class="content" >
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-primary">
+              <h4 class="card-title "></h4>
+              <p class="card-category">Eventos</p>
+              
+            <h1></h1><a href="/admin/blog/new">Adicionar Post</a></h1>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th>
+                      ID
+                    </th>
+                    <th>
+                      E-mail
+                    </th>
+                    <th>
+                        Cadastrado em:
+                      </th>
+                  
+                    <th>
+                      Ações
+                    </th>
+                  </thead>
+                  <tbody>
+                    <% subscribe.map((subs)=>{ %>
+                    <tr>
+                      <td>
+                        <%= subs.id %>
+                      </td>
+                      <td>
+                        <%= subs.email %>
+                      </td>
+                      <td>
+                        <%= subs.created_at %>
+                      </td>
+                     
+                      <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                        
+                          <a href="/admin/inscritos/<%- subs.id %>"  type="button" class="btn btn-secondary" onclick="confirm('Você tem certeza?')" style="background: #8630A0;" >Apagar</a>
+                          
+                        </div>
+                      </td>
+                      </tr>
+                   <% }) %>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       
+<%- include('../../partials/footer.ejs') %>

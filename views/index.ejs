@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>ELPolitic</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/logos/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>  
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <div class="topbar text-center hidden-xs">
+        <p>Este site serve para a apresentação do candidato</p>
+    </div>
+
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image" width="200px"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a data-scroll-nav="0" href="#main-banner" class="active">Home</a></li>
+                        <li><a data-scroll-nav="1" href="#about">Quem sou</a></li>
+                        <li><a data-scroll-nav="2" href="#issues">Compromissos</a></li>
+                        <li><a data-scroll-nav="3" href="#event">Agenda</a></li>
+						<li><a data-scroll-nav="4" href="#gallery">Fotos</a></li>
+                        <li><a data-scroll-nav="5" href="#media">Videos</a></li>
+						<li><a data-scroll-nav="6" href="#blog">Blog</a></li>
+                        <li><a data-scroll-nav="7" href="#contact">Fale comigo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	
+	<div id="main-banner" class="banner-one" data-scroll-index="0">
+		<div data-src="uploads/slide-1.jpg">
+			<div class="camera_caption">
+				<div class="container">
+					<h1 class="wow fadeInUp animated">Fazendo política por um mundo melhor!</h1>
+					<p class="wow fadeInUp animated" data-wow-delay="0.2s"><%- locals.header[0].img_text1 %></p>
+					<a data-scroll href="#about" class="btn btn-light btn-radius btn-brd grd1">DESCUBRA</a>
+				</div> <!-- /.container -->
+			</div> <!-- /.camera_caption -->
+		</div>
+		<div data-src="uploads/slide-2.jpg">
+			<div class="camera_caption">
+				<div class="container">
+                    <% header %>
+					<h1 class="wow fadeInUp animated">Fazendo política por um mundo melhor!</h1>
+					<p class="wow fadeInUp animated" data-wow-delay="0.2s"><%- locals.header[0].img_text2 %></p>
+					<a data-scroll href="#event" class="btn btn-light btn-radius btn-brd grd1">AGENDA</a>
+				</div> <!-- /.container -->
+			</div> <!-- /.camera_caption -->
+		</div>
+		<div data-src="uploads/slide-3.jpg">
+			<div class="camera_caption">
+				<div class="container">
+					<h1 class="wow fadeInUp animated">Fazendo política por um mundo melhor!</h1>
+					<p class="wow fadeInUp animated" data-wow-delay="0.2s"><%- locals.header[0].img_text3 %></p>
+					<a data-scroll href="#contact" class="btn btn-light btn-radius btn-brd grd1">FALE COMIGO</a>
+				</div> <!-- /.container -->
+			</div> <!-- /.camera_caption -->
+		</div>
+	</div> <!-- /#theme-main-banner -->
+
+
+    <div id="about" data-scroll-index="1" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h4>Quem sou</h4>
+                        <h2><%= sobre[0].title %></h2>
+                        <blockquote class="lead"><%= sobre[0].legend %></blockquote>
+
+                        <p> <%= sobre[0].body %></p>
+
+                        <a href="#services" data-scroll class="btn btn-light btn-radius btn-brd grd1">Saiba Mais</a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="post-media wow fadeIn">
+                        <img src="uploads/about_04.png" alt="" class="img-responsive img-rounded">
+                        <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="hr1"> 
+
+            <div class="row text-center">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                   <div class="service-widget">
+                        <div class="post-media_pp wow fadeIn">
+                            <a href="uploads/politic_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="uploads/politic_01.jpg" alt="" class="img-responsive">
+							<div class="hover-up">
+								<h3>Let's work for a better future</h3>
+								<p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, 
+								convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
+							</div>
+                        </div>
+                        
+                    </div><!-- end service -->
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-widget">
+                        <div class="post-media_pp wow fadeIn">
+                            <a href="uploads/politic_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="uploads/politic_02.jpg" alt="" class="img-responsive">
+							<div class="hover-up">
+								<h3>Parliament building was renovated</h3>
+								<p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo 
+								rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
+							</div>
+                        </div>
+                        
+                    </div><!-- end service -->
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-widget">
+                        <div class="post-media_pp wow fadeIn">
+                            <a href="uploads/politic_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="uploads/politic_03.jpg" alt="" class="img-responsive">
+							<div class="hover-up">
+								<h3>Start new legislative year</h3>
+								<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+							</div>
+                        </div>
+                        
+                    </div><!-- end service -->
+                </div>
+				
+				<div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-widget">
+                        <div class="post-media_pp wow fadeIn">
+                            <a href="uploads/politic_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img src="uploads/politic_02.jpg" alt="" class="img-responsive">
+							<div class="hover-up">
+								<h3>Parliament building was renovated</h3>
+								<p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
+							</div>
+                        </div>
+                    </div><!-- end service -->
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="section nopad">
+        <img src="uploads/" alt="" class="img-responsive">
+    </div>
+
+    <div id="issues" data-scroll-index="2" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Compromissos e Planos</h3>
+                <p class="lead"><%= issue[0].sub_ttitle %></p>
+            </div><!-- end title -->
+
+            <div class="row">
+				<div class="col-md-5">
+                    <div class="issuse-wrap2 clearfix">
+                        <img src="uploads/about_04.jpg" alt="" class="img-responsive img-rounded">
+                        <h4><%= issue[0].aisde_larger %></h4>
+                        <p><%= issue[0].aside_text %></p>
+                        
+                    </div><!-- end issue -->
+                </div><!-- end col -->
+                <div class="col-md-7">
+                    <div class="issuse-wrap clearfix">
+                        <img src="uploads/issue_01.jpg" alt="" class="img-responsive img-rounded alignleft">
+                        <h4></h4>
+                        <p></p>
+                    </div><!-- end issue -->
+
+                    <div class="issuse-wrap clearfix">
+                        <img src="uploads/issue_02.jpg" alt="" class="img-responsive img-rounded alignleft">
+                        <h4>COMPREHENSIVE IMMIGRATION REFORM</h4>
+                        <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                    </div><!-- end issue -->
+
+                    <div class="issuse-wrap clearfix">
+                        <img src="uploads/issue_03.jpg" alt="" class="img-responsive img-rounded alignleft">
+                        <h4>ECONOMIC OPPORTUNITY</h4>
+                        <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                    </div><!-- end issue -->
+
+                    <div class="issuse-wrap lastchild clearfix">
+                        <img src="uploads/issue_04.jpg" alt="" class="img-responsive img-rounded alignleft">
+                        <h4>HEALTH CARE</h4>
+                        <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                    </div><!-- end issue -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="event" data-scroll-index="3" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Agenda</h3>
+                <p class="lead"><%= event[0].subtitle %></p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="participate-wrap">
+                        <small><%= event[0].category %></small>
+						<figure>
+							<img src="uploads/politic_04.jpg" alt="" class="img-responsive">
+							<figcaption><a href="#" class="global-radius"> <i class="flaticon-unlink"></i> </a></figcaption>
+						</figure>
+						<div class="event_dit">
+							<h4><%= event[0].title %></h4>
+							<ul>
+								<li> <a href="#"> <i class="fa fa-calendar"></i> <%= event[0].date %> </a> </li>
+								<li> <a href="#"> <i class="fa fa-clock-o"></i> <%= event[0].hour %></a>  </li>
+								<li> <a href="#"> <i class="fa fa-map-marker"></i> <%= event[0].local %></a> </li>
+							</ul>
+							<p><%= event[0].description %></p>
+							<a href="event-detail.html" class="btn btn-light btn-radius btn-brd grd1">Detalhes</a>
+						</div>
+                    </div><!-- end participate -->
+                </div><!-- end col -->
+
+                <div class="col-md-4">
+                    <div class="participate-wrap">
+                        <small>Let's Speak with Us</small>
+						<figure>
+							<img src="uploads/politic_05.jpg" alt="" class="img-responsive">
+							<figcaption><a href="#" class="global-radius"> <i class="flaticon-unlink"></i> </a></figcaption>
+						</figure>
+						<div class="event_dit">
+							<h4>Integer facilisis elit</h4>
+							<ul>
+								<li> <a href="#"> <i class="fa fa-calendar"></i> 24-10-2015 </a> </li>
+								<li> <a href="#"> <i class="fa fa-clock-o"></i> 7:00 PM to 9:00 PM </a>  </li>
+								<li> <a href="#"> <i class="fa fa-map-marker"></i> NY City, USA </a> </li>
+							</ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+							<a href="event-detail.html" class="btn btn-light btn-radius btn-brd grd1">Detalhes</a>
+						</div>
+                    </div><!-- end participate -->
+                </div><!-- end col -->
+
+                <div class="col-md-4">
+                    <div class="participate-wrap">
+                        <small>Join Us for Free</small>
+                        <figure>
+							<img src="uploads/politic_06.jpg" alt="" class="img-responsive">
+							<figcaption><a href="#" class="global-radius"> <i class="flaticon-unlink"></i> </a></figcaption>
+						</figure>
+                        <div class="event_dit">
+							<h4>Maecenas bibendum tellus</h4>
+							<ul>
+								<li> <a href="#"> <i class="fa fa-calendar"></i> 24-10-2015 </a> </li>
+								<li> <a href="#"> <i class="fa fa-clock-o"></i> 7:00 PM to 9:00 PM </a>  </li>
+								<li> <a href="#"> <i class="fa fa-map-marker"></i> NY City, USA </a> </li>
+							</ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+							<a href="event-detail.html" class="btn btn-light btn-radius btn-brd grd1">Detalhes</a>
+						</div>
+                    </div><!-- end participate -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+	
+	<div id="gallery" data-scroll-index="4" class="section lb">
+		<div class="container">
+			<div class="section-title text-center">
+                <h3>Fotos</h3>
+                <p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.<br> Sed a tellus quis mi rhoncus dignissim.</p>
+            </div><!-- end title -->
+			
+			<div class="gallery-menu row">
+				<div class="col-md-12">
+					<div class="button-group filter-button-group text-center">
+						<button class="active" data-filter="*">Todas</button>
+						<button data-filter=".gal_a">Encontros</button>
+						<button data-filter=".gal_b">Eventos</button>
+						<button data-filter=".gal_c">Economia</button>
+						<button data-filter=".gal_d">Educação</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="gallery-list row">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-01.jpg" class="img-responsive" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-02.jpg" class="img-responsive" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-03.jpg" class="img-responsive" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-04.jpg" class="img-responsive" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-05.jpg" class="img-responsive" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_d">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-06.jpg" class="img-responsive" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+    <div id="media" data-scroll-index="5" class="section wb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Videos</h3>
+                <p class="lead"><%= videos[0].subtitle %></p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="issuse-wrap2 clearfix">
+                        <div class="post-media wow fadeIn">
+                            <img src="uploads/news_01.jpg" alt="" class="img-responsive img-rounded">
+                            <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                        </div><!-- end media -->
+                        <h4><%= videos[0].title %></h4>
+                        <p><%= videos[0].text %></p>
+                    </div><!-- end issue -->
+                </div><!-- end col -->
+
+                <div class="col-md-4">
+                    <div class="issuse-wrap2 clearfix">
+                        <div class="post-media wow fadeIn">
+                            <img src="uploads/news_02.jpg" alt="" class="img-responsive img-rounded">
+                            <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                        </div><!-- end media -->
+                        <h4>"Our Speaker Talking About Our Strategy! All plans!"</h4>
+                        <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                    </div><!-- end issue -->
+                </div><!-- end col -->
+
+                <div class="col-md-4">
+                    <div class="issuse-wrap2 clearfix">
+                        <div class="post-media wow fadeIn">
+                            <img src="uploads/news_03.jpg" alt="" class="img-responsive img-rounded">
+                            <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>
+                        </div><!-- end media -->
+                        <h4>"Say Hello to our new politican : John DOE..”</h4>
+                        <p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                    </div><!-- end issue -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div id="blog" data-scroll-index="6" class="section lb">
+		<div class="container">
+			<div class="section-title text-center">
+				<span>Últimas Notícias</span>
+                <h3> Blog</h3>
+                <p class="lead">Acompanhe as últimas notícias e matérias especiais</p>
+            </div><!-- end title -->
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/politic_04.jpg" class="img-responsive" alt="post-img" />
+							<div class="date">
+								<span><%= blog[0].date %></span>
+								
+							</div>
+						</div>
+						<div class="post-info">
+							<h4><%= blog[0].title %></h4>
+							<ul>
+                                <li><%= blog[0].author %></li>
+                                <li><%= blog[0].date_post %></li>
+                                <li><a href="#"><b> </b></a></li>
+                            </ul>
+							<p><%= blog[0].description %></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/politic_05.jpg" class="img-responsive" alt="post-img" />
+							<div class="date">
+								<span>06</span>
+								<span>Aug</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Maecenas bibendum tellus</h4>
+							<ul>
+                                <li>by admin</li>
+                                <li>Apr 21, 2018</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/politic_06.jpg" class="img-responsive" alt="post-img" />
+							<div class="date">
+								<span>06</span>
+								<span>Aug</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Maecenas bibendum tellus</h4>
+							<ul>
+                                <li>by admin</li>
+                                <li>Apr 21, 2018</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+    <div id="donate" data-scroll-index="7" class="section db">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Fale Comigo</h3>
+                <p class="lead">Mande uma mensagem sobre qualquer assunto!</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactform" class="row" action="contact.php" name="contactform" method="post">
+                            <fieldset class="row-fluid">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Me diga seu nome">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="E seu sobrenome">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="seu e-mail">
+                                </div>
+                                
+                                
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Fale comigo"></textarea>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 text-center">
+                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Enviar Mensagem</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">Blog</a>
+                        
+                        <a href="#">Quem sou</a>
+                        <a href="#">Fale comigo</a>
+                    </p>
+                    <p class="footer-company-name">Todos direitos reservados. &copy; 2020 <a href="#">Candidato</a> Design By : 
+					<a href="https://html.design/">Valter L. Tonon</a></p>
+                </div>
+
+                <div class="footer-right">
+                    <form method="POST">
+                        <input placeholder="Receba nossas notícias" name="email">
+                        <i class="fa fa-envelope-o"></i>
+                    </form>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="/js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="/js/jquery.mobile.customized.min.js"></script>
+	<script src="/js/jquery.easing.1.3.js"></script> 
+	<script src="/js/camera.min.js"></script>
+	<script src="/js/scrollIt.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="/js/custom.js"></script>
+    <script src="/js/jquery.vide.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<%- include('../partials/adminheader.ejs') %>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:void(0)">Banner Inicial</a>
+          </div>
+          <%- include('../partials/navbar.ejs') %>
+         
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="card">
+                  <div class="card-header card-header-primary">
+                    <h4 class="card-title">Banner Inicial </h4>
+                    <p class="card-category">Editar slogan e fotos 1</p>
+                  </div>
+                  <div class="card-body">
+                    <form method="POST">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Inserir foto 1</label>
+                            <input type="text" class="form-control" disabled>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Escolher arquivo</label>
+                            <input type="text" class="form-control" disabled>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label class="bmd-label-floating">Arquivo</label>
+                            <input type="email" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                     
+                      
+                     
+                     
+                        
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Slogan 1</label>
+                            <div class="form-group">
+                              <label class="bmd-label-floating"></label>
+                              <textarea class="form-control" rows="3" name="img_text1"><%- header[0].img_text1 %></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary pull-right">Alterar Banner</button>
+                    <div class="clearfix"></div>
+                  </form>
+                  <form method="POST">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Inserir foto 3</label>
+                          <input type="text" class="form-control" disabled>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Escolher arquivo</label>
+                          <input type="text" class="form-control" disabled>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="bmd-label-floating">Arquivo</label>
+                          <input type="email" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                   
+                    
+                   
+                   
+                      
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Slogan 2</label>
+                          <div class="form-group">
+                            <label class="bmd-label-floating"></label>
+                            <textarea class="form-control" rows="2" name="img_text2"><%- header[0].img_text2 %></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary pull-right">Alterar Banner 2</button>
+                        <div class="clearfix"></div>
+                      </form>
+                      <form method="POST">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="form-group">
+                              <label class="bmd-label-floating">Inserir foto 2</label>
+                              <input type="text" class="form-control" disabled>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="form-group">
+                              <label class="bmd-label-floating">Escolher arquivo</label>
+                              <input type="text" class="form-control" disabled>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <label class="bmd-label-floating">Arquivo</label>
+                              <input type="email" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                       
+                        
+                       
+                       
+                          
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label>Slogan 3</label>
+                              <div class="form-group">
+                                <label class="bmd-label-floating"></label>
+                                <textarea class="form-control" rows="2" name="img_text3"><%- header[0].img_text3 %></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary pull-right">Alterar Banner 3</button>
+                        
+                        <div class="clearfix"></div>
+                      </form>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        
+       <%- include('../partials/footer.ejs') %>

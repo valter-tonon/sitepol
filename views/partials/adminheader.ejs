@@ -1,0 +1,88 @@
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="/assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="/assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+
+
+<body class="dark-edition">
+ 
+  <div class="wrapper ">
+    <div class="sidebar" data-color="purple" data-background-color="black" data-image="/assets/img/sidebar-2.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Site Politician
+        </a></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+         
+          
+            
+          <li <% if (page_name === 'admin') { %>class="active nav-item" <% } %>>   
+            <a class="nav-link" href="/admin" >
+              <i class="material-icons">dashboard</i>
+              <p >Banner Inicial</p>
+            </a>
+          </li>
+        
+          <li <% if (page_name === 'user') { %>class="active nav-item" <% } %>>   
+            <a class="nav-link" href="/admin/user" >
+              <i class="material-icons">person</i>
+              <p >Cadastro Usuário</p>
+            </a>
+          </li>
+          <li <% if (page_name === 'about') { %>class="active nav-item" <% } %>>   
+            <a class="nav-link" href="/admin/about" >
+              <i class="material-icons">content_paste</i>
+              <p >Quem sou</p>
+            </a>
+          </li>
+          <li <% if (page_name === 'issue') { %>class="active nav-item" <% } %>>   
+            <a class="nav-link" href="/admin/issues" >
+              <i class="material-icons">library_books</i>
+              <p >Compromissos</p>
+            </a>
+          </li>
+          <li <% if (page_name === 'event') { %>class="active nav-item" <% } %>>   
+            <a class="nav-link" href="/admin/events" >
+              <i class="material-icons">calendar_today</i>
+              <p >Agenda</p>
+            </a>
+          </li>
+          <li class='nav-item'>   
+            <a class="nav-link" href="#" >
+              <i class="material-icons">insert_photo</i>
+              <p >Galeria de fotos</p>
+            </a>
+          </li>
+          <li class="nav-item">   
+            <a class="nav-link" href="#" >
+              <i class="material-icons">switch_video</i>
+              <p >Link dos Vídeos</p>
+            </a>
+          </li>
+          <li <% if (page_name === 'blog') { %>class="active nav-item" <% } %>>   
+            <a class="nav-link" href="/admin/blog" >
+              <i class="material-icons">rss_feed</i>
+              <p >Blog</p>
+            </a>
+          </li>
+          <li <% if (page_name === 'subscribe') { %>class="active nav-item" <% } %>>   
+            <a class="nav-link" href="/admin/inscritos" >
+              <i class="material-icons">list</i>
+              <p >Inscritos</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
