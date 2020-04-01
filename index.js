@@ -9,7 +9,7 @@ const db = require('knex')({
     }
 })
 const app = require('./app')(db)
-const port = process.env.PORT || 3333
+const port = process.env.PORT || 3000
 
 const user = require('./models/user')
 user.initiaiUser(db)()
