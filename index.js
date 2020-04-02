@@ -1,10 +1,10 @@
 const db = require('knex')({
     client: 'mysql2',
     connection:{
-        host: 'mysql669.umbler.com',
-        user: 'valter',
-        password: 'testesite',
-        database: 'sotepol',
+        host: 'us-cdbr-iron-east-01.cleardb.net',
+        user: '	bf225bf519504c',
+        password: '	ae6fa2a3 ',
+        database: 'heroku_fc2fae0b596094c',
         roles: 'admin'
     }
 })
